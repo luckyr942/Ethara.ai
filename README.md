@@ -43,10 +43,7 @@ This project is structured as a single service for easy deployment on Railway.
 
 1. Create a MySQL Database service on Railway.
 2. Link your GitHub repository to a new Railway Web Service.
-3. Add the following Environment Variables to the Web Service:
-   - `DB_HOST`: `${{MySQL.MYSQLHOST}}`
-   - `DB_USER`: `${{MySQL.MYSQLUSER}}`
-   - `DB_PASSWORD`: `${{MySQL.MYSQLPASSWORD}}`
-   - `DB_NAME`: `${{MySQL.MYSQLDATABASE}}`
+3. The application will automatically detect Railway's MySQL environment variables (`MYSQLHOST`, `MYSQLUSER`, etc.)!
+4. You ONLY need to add one Environment Variable to the Web Service:
    - `JWT_SECRET`: `your_random_secret_string`
-4. Railway will automatically build the React frontend and serve it via the Express backend.
+5. Railway will automatically build the React frontend and serve it via the Express backend.
