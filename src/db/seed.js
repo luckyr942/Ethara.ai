@@ -23,9 +23,9 @@ async function seed() {
     await pool.query(
       'INSERT INTO users (id, name, email, password, role) VALUES ?',
       [[
-        [adminId, 'Sarah Jenkins (Admin)', 'admin@ethara.ai', adminPass, 'ADMIN'],
-        [member1Id, 'Alex Chen', 'alex@ethara.ai', memberPass, 'MEMBER'],
-        [member2Id, 'Maria Garcia', 'maria@ethara.ai', memberPass, 'MEMBER']
+        [adminId, 'lucky (Admin)', 'admin@ethara.ai', adminPass, 'ADMIN'],
+        [member1Id, 'Alex', 'alex@ethara.ai', memberPass, 'MEMBER'],
+        [member2Id, 'Maria ', 'maria@ethara.ai', memberPass, 'MEMBER']
       ]]
     );
 
